@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Museum Ganesya</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #f5eee4;
+            color: #4a3426;
+        }
+        header {
+            background-color: #4a3426;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #f5eee4;
+            font-family: "Georgia", serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        nav a {
+            color: #f5eee4;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .judul {
+            text-align: center;
+            padding: 55px 20px 35px;
+        }
+        .judul h1 {
+            margin-bottom: 10px;
+            font-family: "Georgia", serif;
+            font-size: 38px;
+        }
+        .judul p {
+            margin: 0;
+            color: #6d5848;
+        }
+        .kategori {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .kategori button {
+            background-color: #4a3426;
+            color: #f5eee4;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Poppins", sans-serif;
+        }
+        .kategori button:hover {
+            background-color: #6d5040;
+        }
+        .koleksi {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 25px 60px;
+        }
+        .kategori-title {
+            font-family: "Georgia", serif;
+            font-size: 27px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4a3426;
+            padding-bottom: 8px;
+        }
+        .koleksi-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .koleksi-card {
+            background-color: #fffaf4;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(74, 52, 38, 0.15);
+            transition: 0.3s;
+        }
+        .koleksi-card:hover {
+            transform: translateY(-5px);
+        }
+        .koleksi-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+        .isi-card {
+            padding: 18px;
+        }
+        .isi-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: "Georgia", serif;
+            font-size: 20px;
+        }
+        .isi-card p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #6d5848;
+            margin-bottom: 15px;
+        }
+        .detail-btn {
+            display: inline-block;
+            background-color: #4a3426;
+            color: #f5eee4;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .detail-btn:hover {
+            background-color: #6d5040;
+        }
+        footer {
+            background-color: #4a3426;
+            color: #f5eee4;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+        @media (max-width: 800px) {
+            header {
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+            .koleksi-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 550px) {
+            .koleksi-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Museum Ganesya</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#visi-misi">Visi & Misi</a>
+        <a href="katalog.html">Koleksi</a>
+        <a href="index.html#tentang">Tentang Museum</a>
+        <a href="https://maps.google.com/?q=Museum+Ganesya" target="_blank">Lokasi</a>
+    </nav>
+</header>
+<section class="judul">
+    <h1>Katalog Koleksi</h1>
+    <p>Jelajahi berbagai koleksi budaya dan sejarah yang ada di Museum Ganesya.</p>
+</section>
+<div class="kategori">
+    <button onclick="location.href='#artefak'">Artefak</button>
+    <button onclick="location.href='#wayang'">Wayang</button>
+    <button onclick="location.href='#topeng'">Topeng</button>
+</div>
+<main class="koleksi">
+    <!-- ================= ARTEFAK ================= -->
+    <h2 class="kategori-title" id="artefak">Artefak</h2>
+    <div class="koleksi-container">
+        <div class="koleksi-card">
+            <img src="gambar/artefak 1.jpg" alt="Arca Figur Manusia">
+            <div class="isi-card">
+                <h3>Arca Figur Manusia</h3>
+                <p>
+                    Koleksi arca berbentuk figur manusia yang menjadi bagian
+                    dari peninggalan sejarah dan budaya.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak1">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/artefak 2.jpg" alt="Koleksi Perhiasan dan Kalung">
+            <div class="isi-card">
+                <h3>Koleksi Perhiasan dan Kalung</h3>
+                <p>
+                    Koleksi perhiasan dan kalung yang menunjukkan bentuk seni
+                    serta budaya masyarakat pada masa lalu.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak2">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/artefak 3.jpg" alt="Arca dan Miniatur Bangunan">
+            <div class="isi-card">
+                <h3>Arca dan Miniatur Bangunan</h3>
+                <p>
+                    Koleksi arca dan miniatur yang menggambarkan bentuk
+                    peninggalan budaya masa lampau.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak3">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/artefak 4.jpg" alt="Celengan Babi">
+            <div class="isi-card">
+                <h3>Celengan Babi</h3>
+                <p>
+                    Koleksi wadah berbentuk babi yang menjadi salah satu
+                    benda peninggalan dalam koleksi museum.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak4">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/artefak 5.jpg" alt="Koleksi Gerabah dan Wadah">
+            <div class="isi-card">
+                <h3>Koleksi Gerabah dan Wadah</h3>
+                <p>
+                    Berbagai bentuk gerabah dan wadah yang memperlihatkan
+                    penggunaan benda dalam kehidupan masyarakat masa lalu.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak5">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/artefak 6.jpg" alt="Guci dan Wadah Kuno">
+            <div class="isi-card">
+                <h3>Guci dan Wadah Kuno</h3>
+                <p>
+                    Koleksi guci dan wadah kuno yang menjadi bagian dari
+                    benda budaya dan sejarah museum.
+                </p>
+                <a class="detail-btn" href="detail.html?item=artefak6">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ================= WAYANG ================= -->
+    <h2 class="kategori-title" id="wayang">Wayang</h2>
+    <div class="koleksi-container">
+        <div class="koleksi-card">
+            <img src="gambar/wayang 1.jpg" alt="Wayang Golek Panakawan">
+            <div class="isi-card">
+                <h3>Wayang Golek Panakawan</h3>
+                <p>
+                    Koleksi wayang golek yang menampilkan tokoh Panakawan
+                    dalam tradisi seni pertunjukan.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang1">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/wayang 2.jpg" alt="Punokawan Cirebon">
+            <div class="isi-card">
+                <h3>Punokawan Cirebon</h3>
+                <p>
+                    Koleksi tokoh Punokawan yang memperlihatkan keberagaman
+                    tradisi wayang di Indonesia.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang2">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/wayang 3.jpg" alt="Wayang Thegel">
+            <div class="isi-card">
+                <h3>Wayang Thegel</h3>
+                <p>
+                    Koleksi wayang tradisional yang menjadi bagian dari
+                    kekayaan seni pertunjukan Nusantara.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang3">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/wayang 4.jpg" alt="Wayang Golek Tokoh Wayang">
+            <div class="isi-card">
+                <h3>Wayang Golek Tokoh Wayang</h3>
+                <p>
+                    Koleksi wayang golek dengan bentuk tokoh yang
+                    memperlihatkan karakter seni tradisional.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang4">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/wayang 5.jpg" alt="Koleksi Wayang Tradisional">
+            <div class="isi-card">
+                <h3>Koleksi Wayang Tradisional</h3>
+                <p>
+                    Berbagai bentuk wayang tradisional yang menjadi bagian
+                    dari warisan budaya Indonesia.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang5">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/wayang 6.jpg" alt="Wayang Boneka Tiga Dimensi">
+            <div class="isi-card">
+                <h3>Wayang Boneka Tiga Dimensi</h3>
+                <p>
+                    Koleksi wayang berbentuk tiga dimensi yang menunjukkan
+                    variasi bentuk dalam seni pertunjukan.
+                </p>
+                <a class="detail-btn" href="detail.html?item=wayang6">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ================= TOPENG ================= -->
+    <h2 class="kategori-title" id="topeng">Topeng</h2>
+    <div class="koleksi-container">
+        <div class="koleksi-card">
+            <img src="gambar/topeng 1.jpg" alt="Topeng Mahesa Sura">
+            <div class="isi-card">
+                <h3>Topeng Mahesa Sura</h3>
+                <p>
+                    Salah satu koleksi topeng yang menggambarkan karakter
+                    dalam tradisi seni pertunjukan Nusantara.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng1">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/topeng 2.jpg" alt="Topeng Menak">
+            <div class="isi-card">
+                <h3>Topeng Menak</h3>
+                <p>
+                    Koleksi topeng tradisional yang menjadi bagian dari
+                    kekayaan seni dan budaya Indonesia.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng2">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/topeng 3.jpg" alt="Topeng Jaya Samba">
+            <div class="isi-card">
+                <h3>Topeng Jaya Samba</h3>
+                <p>
+                    Topeng dengan karakter khas yang menjadi bagian dari
+                    koleksi seni tradisional museum.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng3">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/topeng 4.jpg" alt="Topeng Tangsen">
+            <div class="isi-card">
+                <h3>Topeng Tangsen</h3>
+                <p>
+                    Koleksi topeng tradisional yang memperlihatkan karakter
+                    dan bentuk seni budaya Nusantara.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng4">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/topeng 5.jpg" alt="Topeng Pintèn">
+            <div class="isi-card">
+                <h3>Topeng Pintèn</h3>
+                <p>
+                    Salah satu koleksi topeng tradisional yang memiliki
+                    bentuk dan karakter khas.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng5">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+        <div class="koleksi-card">
+            <img src="gambar/topeng 6.jpg" alt="Topeng Demit">
+            <div class="isi-card">
+                <h3>Topeng Demit</h3>
+                <p>
+                    Koleksi topeng dengan karakter khas yang memperlihatkan
+                    keberagaman seni tradisional.
+                </p>
+                <a class="detail-btn" href="detail.html?item=topeng6">
+                    Lihat Detail
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>© 2025 Museum Ganesya — Galeri Indonesia Budaya</p>
+</footer>
+</body>
+</html>

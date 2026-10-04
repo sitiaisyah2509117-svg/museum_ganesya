@@ -1,0 +1,313 @@
+/* =========================
+   DASAR
+========================= */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5eee4;
+    color: #4a3426;
+    line-height: 1.6;
+}
+/* =========================
+   HEADER
+========================= */
+header {
+    height: 75px;
+    padding: 0 55px;
+    background-color: #4a3426;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav {
+    display: flex;
+    gap: 28px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #e4cdb8;
+}
+/* =========================
+   HERO / COVER
+========================= */
+.hero {
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 22, 13, 0.48);
+}
+.hero-text {
+    position: absolute;
+    z-index: 2;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    color: white;
+}
+.hero-text h2 {
+    margin: 0 0 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: 1px;
+}
+.hero-text p {
+    max-width: 570px;
+    margin: 0 0 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+/* TOMBOL HERO */
+.hero-button {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.hero-button:hover {
+    background-color: white;
+    color: #4a3426;
+}
+/* =========================
+   VISI & MISI
+========================= */
+.visi-misi {
+    padding: 60px 55px;
+    background-color: #e8d8c7;
+}
+.visi-misi-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 70px;
+}
+.visi,
+.misi {
+    width: 50%;
+}
+.visi span,
+.misi span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #866044;
+    font-weight: 600;
+}
+.visi h2,
+.misi h2 {
+    margin: 5px 0 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #4a3426;
+    font-weight: 600;
+}
+.visi p,
+.misi li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #675346;
+}
+.misi ul {
+    padding-left: 20px;
+    margin: 0;
+}
+.misi li {
+    margin-bottom: 8px;
+}
+/* =========================
+   KOLEKSI
+========================= */
+.koleksi {
+    padding: 55px 55px 65px;
+    background-color: #f5eee4;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.hiasan {
+    color: #a77b55;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.section-title h2 {
+    margin: 0 0 7px;
+    font-family: 'Playfair Display', serif;
+    font-size: 31px;
+    font-weight: 600;
+    color: #4a3426;
+}
+.section-title p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #725d4e;
+}
+/* =========================
+   CARD KOLEKSI
+========================= */
+.koleksi-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+.koleksi-card {
+    width: 33.33%;
+    background-color: #fffaf4;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(70, 45, 25, 0.12);
+    transition: 0.3s;
+}
+.koleksi-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(70, 45, 25, 0.18);
+}
+.koleksi-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h3 {
+    margin: 0 0 8px;
+    font-family: 'Playfair Display', serif;
+    color: #4a3426;
+    font-size: 21px;
+    font-weight: 600;
+}
+.card-content p {
+    margin: 0 0 17px;
+    color: #6b584b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.selengkapnya {
+    color: #6d452c;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.selengkapnya:hover {
+    text-decoration: underline;
+}
+/* =========================
+   TENTANG MUSEUM
+========================= */
+.tentang {
+    padding: 70px 55px;
+    background-color: #e8d8c7;
+}
+.tentang-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+/* GAMBAR */
+.tentang-image {
+    width: 48%;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 5px 18px rgba(70, 45, 25, 0.12);
+}
+.tentang-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* TEKS */
+.tentang-text {
+    width: 52%;
+}
+.tentang-text span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #866044;
+    font-weight: 600;
+}
+.tentang-text h2 {
+    margin: 5px 0 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #4a3426;
+}
+.tentang-text p {
+    margin: 0 0 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #675346;
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 23px;
+    background-color: #4a3426;
+    color: white;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+}
